@@ -1,0 +1,14 @@
+// Storing JSON data for access
+
+{
+	"full-name" : "Josh Evans",
+	"title" : "Learning JSON",
+    // turning the links object into an array that contains many objects
+    // reordering the links here alphabetically as I'm aiming for an ordered list
+	"links" : [
+        {"github" : "http://github.com/digitaljev" }, 
+        {"twitter" : "http://twitter.com/digitaljev" },
+        {"website" : "http://digitaljev.com" }
+    ]
+}
+

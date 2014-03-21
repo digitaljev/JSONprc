@@ -1,0 +1,19 @@
+{
+    "title" : "Speakers",
+	"reason" : "Learning JSON",
+	"speakers" : [
+        {
+            "Name" : "Bob" , 
+            "Bio" : "Lorem ipsum dolor sit amet, nec te wisi falli rationibus, ex debet latine regione qui, liber possim dissentiunt ad nam. An solet impetus appellantur mei, et tota atqui fabulas duo. Latine legimus usu ut, amet constituto duo cu. Ex eam esse facilis voluptua, ne mei dico quando accusata." 
+            },
+        {
+            "Name" : "Stacy" , 
+            "Bio" : "Error quando at vel, mei dolor equidem no. Cu affert oratio vel, no illum mollis lucilius has, duo at adhuc ullum graece. Eam veniam aperiam constituam eu, in elit melius labitur pri, vix ei causae delectus torquatos. Nec no lobortis partiendo mediocritatem. Eu stet iuvaret impedit cum, tollit singulis evertitur duo ne. Ei mundi ignota cetero sed, qui habeo omnes accusata et, an sit vero fugit labitur."
+        },
+        {
+            "Name" : "George" , 
+            "Bio" : "Delenit molestie quaerendum per ei. Ea omnis adipiscing qui, probo facer torquatos no qui. Legendos gloriatur ut mea, id duo cibo phaedrum eleifend, vis ex volumus salutatus. Nam sale labore an."
+        }
+    
+    ]
+}

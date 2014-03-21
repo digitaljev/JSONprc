@@ -1,0 +1,38 @@
+/* going to select the font family that was included from google fonts*/
+body{
+    background: #EEE7D5;
+    font-family: "Libre Baskerville";
+}
+#speakerbox{
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#speakerbox h3 {
+    font-weight: normal;
+    margin: 0 0 5 0;
+    padding: 0;
+    font-size: 2em;
+    font-family: "Wendy One";
+    
+}
+#speakerbox img {
+    float: right;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 100px;
+}
+#speakerbox #nxt_btn, #speakerbox #prv_btn {
+    background: #87CEFA;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+    display: inline-block;
+}
+#speakerbox a#nxt_btn, #speakerbox a#prv_btn {
+    text-decoration: none;
+    color: #000;
+}

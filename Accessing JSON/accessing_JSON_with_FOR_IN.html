@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Looping through JSON with JS FOR-IN
+</title>
+
+</head>
+<body>
+<!-- 
+The HTML tags need to go first so the JS can get the element.
+You could also call the JS from a JS file.
+-->
+<h2>Looping through JSON with JS FOR-IN</h2>
+<ul id="links"></ul>
+
+<script>
+
+// JSON structured data
+var info = {
+	"full-name" : "Josh Evans",
+	"title" : "Learning JSON",
+	"links" : {
+		"website" : "http://digitaljev.com",
+		"twitter" : "http://twitter.com/digitaljev",
+		"github" : "http://github.com/digitaljev"
+	}
+};
+
+// empty variable to hold the output
+var output = "";
+
+// JS FOR-IN LOOP to create a HTML list of the links
+for ( key in info.links) {
+	// Don't polute list with other libraries that can be accidently included
+	// checking to see if the property is our own.
+	if (info.links.hasOwnProperty(key)) {
+		// searching like you would an array, even though it is not an array, but an object.
+		output += '<li>' + '<a href ="' + info.links[key] + '">' + key  + '</a>' + '</li>';
+	}
+}
+
+// creating a variable to store the HTML element and setting the output data into the variable.
+var update = document.getElementById('links');
+update.innerHTML = output;
+
+</script>
+
+
+</body>
+</html>

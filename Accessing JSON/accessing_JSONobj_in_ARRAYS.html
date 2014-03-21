@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Looping through JSON Arrays with For Loops
+</title>
+
+</head>
+<body>
+<!-- 
+The HTML tags need to go first so the JS can get the element.
+You could also call the JS from a JS file.
+-->
+<h2>Looping through JSON Arrays with For Loops</h2>
+<!--   Making an ordered list    -->
+    <ol id="links">
+    </ol>
+
+<script>
+
+// JSON structured data
+    
+    console.log('Hello');
+    
+var info = {
+	"full-name" : "Josh Evans",
+	"title" : "Learning JSON",
+    // turning the links object into an array that contains many objects
+    // reordering the links here alphabetically as I'm aiming for an ordered list
+	"links" : [
+        {"github" : "http://github.com/digitaljev" }, 
+        {"twitter" : "http://twitter.com/digitaljev" },
+        {"website" : "http://digitaljev.com" }
+    ]
+};
+
+    console.log(info);
+    
+// empty variable to hold the output
+var output = "";
+
+// A nested FOR loop to first itereate through each array element
+// and then each object in the array
+// An if statement is used to check that the data is our own.
+    for(var i = 0; i <= info.links.length; i++) {
+        console.log('step 1');
+        for(var key in info.links[i]) {
+            console.log('step 2');
+            console.log(key);
+            if(info.links[i].hasOwnProperty(key)) {
+                console.log('Got this far');
+                output += '<li>' + '<a href = "' + info.links[i][key] + '">' + key + '</a>' + '</li>';
+            } // hasOwnProperty check to see if data is our own
+        } // for each object
+    } // for each array element
+        
+
+// creating a variable to store the HTML element and setting the output data into the variable.
+var update = document.getElementById('links');
+update.innerHTML = output;
+
+</script>
+
+
+</body>
+</html>
